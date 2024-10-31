@@ -3,6 +3,8 @@ import "./index.css"
 
 function Home() {
     return( 
-        <h2>Em andamento...</h2>
+        <div>
+            <h2>Em andamento...</h2>
+        </div>
     )
 }
