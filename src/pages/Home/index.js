@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useSyncExternalStore } from 'react';
 import "./index.css"
 
+<<<<<<< HEAD
 import FileOpenIcon from '@mui/icons-material/FileOpen';
 import NoteAddIcon from '@mui/icons-material/NoteAdd';
 import InsertPageBreakIcon from '@mui/icons-material/InsertPageBreak';
@@ -46,8 +47,18 @@ function Home() {
             </div>
 
             
+=======
+function Home() {
+    return( 
+        <div>
+            <h2>Em andamento...</h2>
+>>>>>>> 197d4b414c7bfffdc898f158b3d67cd87a51ee14
         </div>
     )
 }
 
+<<<<<<< HEAD
 export default Home 
+=======
+export default Home
+>>>>>>> 197d4b414c7bfffdc898f158b3d67cd87a51ee14
