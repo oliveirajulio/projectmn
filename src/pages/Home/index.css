@@ -71,7 +71,7 @@
     cursor: pointer;
 }
 
-button .icon {
+.b1 .icon {
     margin-top: 30px;
     margin-left: 15px;
     align-items: center;
@@ -84,7 +84,7 @@ button .icon {
     transform: scale(1.2); /* Aumenta o tamanho do ícone */
 }
 
-button .title {
+.b1 .title {
     width: 100vw;
     font-size: 19px;
     margin-left: -40px;
@@ -95,7 +95,7 @@ button .title {
     flex-wrap: nowrap;
 }
 
-button .inf {
+.b1 .inf {
     margin-top: 135px;
     margin-left:-685px;
     margin-right: 25px;
@@ -105,7 +105,35 @@ button .inf {
     font-weight: 450;
 }
 
+.b2 .title {
+    width: 100vw;
+    font-size: 19px;
+    margin-left: -45px;
+    font-weight: 550;
+    margin-top: 100px;
+    color: var(--color_3);
+    text-align: left;
+    flex-wrap: nowrap;
+}
 
+.b2 .inf {
+    margin-top: 135px;
+    margin-left:-675px;
+    margin-right: 25px;
+    text-align: left;
+    color: var(--color_3);
+    font-size: 14px;
+    font-weight: 450;
+}
+
+.b2 .icon {
+    margin-top: 30px;
+    margin-left: 15px;
+    align-items: center;
+    font-size: 50px;
+    color: var(--color_4);
+    transition: font-size 0.3s ease;
+}
 
 
 
