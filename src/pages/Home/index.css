@@ -1,0 +1,111 @@
+.container { 
+    background-color: var(--color_2);
+}
+
+.main-header {
+    margin: 0;
+    height: 60px;
+    background-image: url(./logo.png);
+    background-repeat: no-repeat;
+    background-size: 75px;
+    background-position: 2px;
+    background-color: var(--color_2);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.infos {
+    color: var(--color_3);
+    font-size: 18px;
+    margin-top: 40px;
+    margin-left: 550px;
+}
+
+.infos h2 {
+    margin-top: 10px;
+    margin-left: -150px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav {
+    color: var(--color_3);
+    padding-top: 20px;
+    margin-left: 150px;
+}
+
+.nav li:hover {
+    cursor: pointer;
+    color: var(--color_4);
+
+}
+
+.nav li {
+    display: inline;
+    font-size: 15px;
+    font-weight: 500;
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+.tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.tools-container button {
+    padding: 0;
+    border: none;
+    display: flex;
+    background-color: var(--color_);
+    margin-right: 5px;
+    margin-bottom: 5px;
+    height: 245px;
+    width: 245px;
+    box-shadow: -5px 9px 25px 7px rgba(0, 0, 0, 0.1);
+    transition: font-size 0.3s ease;
+}
+
+.tools-container button:hover {
+    cursor: pointer;
+}
+
+button .icon {
+    margin-top: 30px;
+    margin-left: 15px;
+    align-items: center;
+    font-size: 50px;
+    color: var(--color_5);
+    transition: font-size 0.3s ease;
+}
+
+.tools-container button:hover .icon {
+    transform: scale(1.2); /* Aumenta o tamanho do ícone */
+}
+
+button .title {
+    width: 100vw;
+    font-size: 19px;
+    margin-left: -40px;
+    font-weight: 550;
+    margin-top: 100px;
+    color: var(--color_3);
+    text-align: left;
+    flex-wrap: nowrap;
+}
+
+button .inf {
+    margin-top: 135px;
+    margin-left:-685px;
+    margin-right: 25px;
+    text-align: left;
+    color: var(--color_3);
+    font-size: 14px;
+    font-weight: 450;
+}
+
+
+
+
+

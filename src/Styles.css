@@ -1,14 +1,23 @@
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 :root {
-    --cor-primaria: 
+    --color_1: #50d749; 
+    --color_2: #fff4be;
+    --color_3: #002500; 
+    --color_4: #fe2712;
+    --color_5: #58b814;
+    --color_6: #004001;
+
+
+
 }
 
 * {
     right: 0px;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Helvetica Neue', sans-serif;  
+    font-family: 'Roboto', serif;  
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
