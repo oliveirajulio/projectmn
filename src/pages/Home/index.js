@@ -5,6 +5,10 @@ import FileOpenIcon from '@mui/icons-material/FileOpen';
 import NoteAddIcon from '@mui/icons-material/NoteAdd';
 import InsertPageBreakIcon from '@mui/icons-material/InsertPageBreak';
 
+const insert = () => {
+    window.location = "inserir_nota"
+}
+
 
 function Home() {
     return( 
@@ -12,8 +16,8 @@ function Home() {
             <header className='main-header'>
                 <nav className='nav'>
                     <ul>
-                        <li>Insert</li>
-                        <li>Remove</li>
+                        <li onClick={insert}>Inserir NF</li>
+                        <li>Remover NF</li>
                     </ul>
                 </nav>
             </header>
@@ -24,7 +28,7 @@ function Home() {
             </div>
 
             <div className='tools-container'>
-                <button className='b1'>
+                <button className='b1' onClick={insert}>
                     <NoteAddIcon className='icon'/>
                     <h3 className='title'>Inserir nota</h3>
                     <p className='inf'>Insira todos os dados necessários, como CNPJ, data e itens.</p>
@@ -32,7 +36,7 @@ function Home() {
                 <button className='b2'>
                     <InsertPageBreakIcon className='icon'/>
                     <h3 className='title'>Cancelar nota</h3>
-                    <p className='inf'>Remove todos os dados necessários, como CNPJ, data e itens.</p>
+                    <p className='inf'>Remova todos os dados necessários, como CNPJ, data e itens.</p>
                 </button>
                 <button></button>
                 <button></button>
