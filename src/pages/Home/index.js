@@ -4,10 +4,20 @@ import "./index.css"
 import FileOpenIcon from '@mui/icons-material/FileOpen';
 import NoteAddIcon from '@mui/icons-material/NoteAdd';
 import InsertPageBreakIcon from '@mui/icons-material/InsertPageBreak';
+import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 
 const insert = () => {
-    window.location = "inserir_nota"
+    window.location = "entrada_de_nota"
 }
+
+const cancel = () => {
+    window.location = "cancelar_nota"
+}
+
+const registeritem = () => {
+    window.location = "cadastro_de_item"
+}
+
 
 
 function Home() {
@@ -30,15 +40,19 @@ function Home() {
             <div className='tools-container'>
                 <button className='b1' onClick={insert}>
                     <NoteAddIcon className='icon'/>
-                    <h3 className='title'>Inserir nota</h3>
+                    <h3 className='title'>Entrada de nota</h3>
                     <p className='inf'>Insira todos os dados necessários, como CNPJ, data e itens.</p>
                 </button>
-                <button className='b2'>
+                <button className='b2' onClick={cancel}>
                     <InsertPageBreakIcon className='icon'/>
-                    <h3 className='title'>Cancelar nota</h3>
+                    <h3 className='title'>Cancelar</h3>
                     <p className='inf'>Remova todos os dados necessários, como CNPJ, data e itens.</p>
                 </button>
-                <button></button>
+                <button className='b3' onClick={registeritem}>
+                    <AppRegistrationIcon className='icon'/>
+                    <h3 className='title'>Cadastro de item</h3>
+                    <p className='inf'>Insira os dados essenciais para registrar um novo item.</p>
+                </button>
                 <button></button>
                 <button></button>
                 <button></button>

@@ -135,5 +135,34 @@
     transition: font-size 0.3s ease;
 }
 
+.b3 .title {
+    width: 100vw;
+    font-size: 19px;
+    margin-left: -45px;
+    font-weight: 550;
+    margin-top: 100px;
+    color: var(--color_3);
+    text-align: left;
+    flex-wrap: nowrap;
+}
+
+.b3 .inf {
+    margin-top: 135px;
+    margin-left:-760px;
+    margin-right: 25px;
+    text-align: left;
+    color: var(--color_3);
+    font-size: 14px;
+    font-weight: 450;
+}
+
+.b3 .icon {
+    margin-top: 30px;
+    margin-left: 15px;
+    align-items: center;
+    font-size: 50px;
+    color:var(--color_7);
+    transition: font-size 0.3s ease;
+}
 
 

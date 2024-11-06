@@ -13,13 +13,13 @@ function Inserir_Nota () {
             </header>
 
             <div className="work-container">
-                <h1 className="main"> Inserir Nota</h1>
+                <h1 className="main">Cancelar nota</h1>
                 <h2 className="inf2">Insira todos os dados necessários, como CNPJ, data e itens.  A precisão é crucial para evitar erros e garantir conformidade fiscal.</h2>
-                <button className="btn">Selecionar NF</button>
+                <button className="btncancel">Selecionar NF</button>
                 <h3 className="uploader">ou arraste e solte seu arquivo aqui</h3>
 
-                <button className="sd"></button>
-                <button className="sd1"></button>
+                <button className="sdcancel"></button>
+                <button className="sd1cancel"></button>
             </div>
 
         </div>
