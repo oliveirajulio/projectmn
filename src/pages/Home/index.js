@@ -5,6 +5,7 @@ import FileOpenIcon from '@mui/icons-material/FileOpen';
 import NoteAddIcon from '@mui/icons-material/NoteAdd';
 import InsertPageBreakIcon from '@mui/icons-material/InsertPageBreak';
 import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
+import UploadFileIcon from '@mui/icons-material/UploadFile';
 
 const insert = () => {
     window.location = "entrada_de_nota"
@@ -16,6 +17,10 @@ const cancel = () => {
 
 const registeritem = () => {
     window.location = "cadastro_de_item"
+}
+
+const transfer = () => {
+    window.location = "transferencias"
 }
 
 
@@ -55,7 +60,11 @@ function Home() {
                 </button>
                 <button></button>
                 <button></button>
-                <button></button>
+                <button className='b6' onClick={transfer}>
+                    <UploadFileIcon className='icon'/>
+                    <h3 className='title'>Transferências</h3>
+                    <p className='inf'>Realiza a transferência de produtos do estoque atual para outra unidade.</p>
+                </button>
                 <button></button>
                 <button></button>
                 <button></button>

@@ -1,6 +1,6 @@
 import "./index.css"
 
-function Inserir_Nota () {
+function Inserir_Item () {
     return (
         <div className='ctn'>
             <header className='main-header'>
@@ -26,4 +26,4 @@ function Inserir_Nota () {
     )
 }
 
-export default Inserir_Nota;
+export default Inserir_Item;
