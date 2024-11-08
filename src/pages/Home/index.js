@@ -6,6 +6,7 @@ import NoteAddIcon from '@mui/icons-material/NoteAdd';
 import InsertPageBreakIcon from '@mui/icons-material/InsertPageBreak';
 import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 import UploadFileIcon from '@mui/icons-material/UploadFile';
+import ListIcon from '@mui/icons-material/List';
 
 const insert = () => {
     window.location = "entrada_de_nota"
@@ -65,7 +66,11 @@ function Home() {
                     <h3 className='title'>Transferências</h3>
                     <p className='inf'>Realiza a transferência de produtos do estoque atual para outra unidade.</p>
                 </button>
-                <button></button>
+                <button className='b7'>
+                    <ListIcon className='icon'/>
+                    <h3 className='title'>Triagem</h3>
+                    <p className='inf'>Solicitação para repor ou ajustar a quantidade de itens no estoque conforme a demanda.</p>
+                </button>
                 <button></button>
                 <button></button>
                 <button></button>
