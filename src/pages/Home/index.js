@@ -38,8 +38,8 @@ function Home() {
             </header>
 
             <div className='infos'>
-                <h1>NF Tools</h1>
-                <h2>Ferramenta para auxiliar na entrada de dados no sistema</h2>
+                <h1 className='main-title'>NF Tools</h1>
+                <h2 className='subtitle'>Ferramenta para auxiliar na entrada de dados no sistema</h2>
             </div>
 
             <div className='tools-container'>
@@ -65,6 +65,16 @@ function Home() {
                     <h3 className='title'>Transferências</h3>
                     <p className='inf'>Realiza a transferência de produtos do estoque atual para outra unidade.</p>
                 </button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
                 <button></button>
                 <button></button>
                 <button></button>

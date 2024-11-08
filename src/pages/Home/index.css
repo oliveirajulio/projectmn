@@ -1,14 +1,21 @@
 .container { 
+    position: relative;
+    margin: 0;
+    padding: 0;
     background-color: var(--color_2);
 }
 
 .main-header {
+    padding: 0;
     margin: 0;
+    position: fixed;
+    top:0;
+    left: 0;
     height: 60px;
     background-image: url(./logo.png);
     background-repeat: no-repeat;
     background-size: 75px;
-    background-position: 2px;
+    background-position: 0;
     background-color: var(--color_2);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
@@ -16,11 +23,18 @@
 .infos {
     color: var(--color_3);
     font-size: 18px;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-left: 550px;
+    padding-top: 30px;
 }
 
-.infos h2 {
+
+.main-title {
+    top: 100px;
+    left: 550px;
+}
+.subtitle {
+    top: 80px;
     margin-top: 10px;
     margin-left: -150px;
     font-size: 16px;
@@ -51,7 +65,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: 30px;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 .tools-container button {
@@ -59,6 +73,7 @@
     border: none;
     display: flex;
     background-color: var(--color_);
+    margin-top: 0px;
     margin-right: 5px;
     margin-bottom: 5px;
     height: 245px;
