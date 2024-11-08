@@ -11,9 +11,7 @@
     --color_7: #347B98;
     --color_8: #8601AF;
     --color_9: #C21460;
-
-
-
+    --color_10: #1E4700; 
 
 }
 
@@ -27,4 +25,7 @@
     font-style: normal;
     outline: none;                                          
 }
-                
+  
+body {
+    overflow-x: hidden;
+}

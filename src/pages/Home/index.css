@@ -1,3 +1,5 @@
+
+
 .container { 
     height: auto;
     width: auto;
@@ -24,9 +26,9 @@
 
 .infos {
     color: var(--color_3);
-    font-size: 18px;
+    font-size: 21px;
     margin-top: 60px;
-    margin-left: 550px;
+    margin-left: 300px;
     padding-top: 30px;
 }
 
@@ -34,13 +36,16 @@
 .main-title {
     top: 100px;
     left: 550px;
+    font-weight: 500;
 }
 .subtitle {
+    text-align: center;
     top: 80px;
     margin-top: 10px;
-    margin-left: -150px;
-    font-size: 16px;
-    font-weight: 500;
+    margin-left: -80px;
+    margin-right: 230px;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .nav {
@@ -105,7 +110,7 @@
     width: 100vw;
     font-size: 19px;
     margin-left: -40px;
-    font-weight: 550;
+    font-weight: 500;
     margin-top: 100px;
     color: var(--color_3);
     text-align: left;
@@ -119,14 +124,14 @@
     text-align: left;
     color: var(--color_3);
     font-size: 14px;
-    font-weight: 450;
+    font-weight: 400;
 }
 
 .b2 .title {
     width: 100vw;
     font-size: 19px;
     margin-left: -45px;
-    font-weight: 550;
+    font-weight: 500;
     margin-top: 100px;
     color: var(--color_3);
     text-align: left;
@@ -140,7 +145,7 @@
     text-align: left;
     color: var(--color_3);
     font-size: 14px;
-    font-weight: 450;
+    font-weight: 400;
 }
 
 .b2 .icon {
@@ -156,7 +161,7 @@
     width: 100vw;
     font-size: 19px;
     margin-left: -45px;
-    font-weight: 550;
+    font-weight: 500;
     margin-top: 100px;
     color: var(--color_3);
     text-align: left;
@@ -165,15 +170,45 @@
 
 .b3 .inf {
     margin-top: 135px;
-    margin-left:-900px;
+    margin-left:-830px;
     margin-right: 25px;
     text-align: left;
     color: var(--color_3);
     font-size: 14px;
-    font-weight: 450;
+    font-weight: 400;
 }
 
 .b3 .icon {
+    margin-top: 30px;
+    margin-left: 15px;
+    align-items: center;
+    font-size: 50px;
+    color:var(--color_10);
+    transition: font-size 0.3s ease;
+}
+
+.b4 .title {
+    width: 100vw;
+    font-size: 19px;
+    margin-left: -45px;
+    font-weight: 500;
+    margin-top: 100px;
+    color: var(--color_3);
+    text-align: left;
+    flex-wrap: nowrap;
+}
+
+.b4 .inf {
+    margin-top: 135px;
+    margin-left:-915px;
+    margin-right: 25px;
+    text-align: left;
+    color: var(--color_3);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.b4 .icon {
     margin-top: 30px;
     margin-left: 15px;
     align-items: center;
@@ -186,7 +221,7 @@
     width: 100vw;
     font-size: 19px;
     margin-left: -45px;
-    font-weight: 550;
+    font-weight: 500;
     margin-top: 100px;
     color: var(--color_3);
     text-align: left;
@@ -200,7 +235,7 @@
     text-align: left;
     color: var(--color_3);
     font-size: 14px;
-    font-weight: 450;
+    font-weight: 400;
 }
 
 .b6 .icon {
@@ -216,7 +251,7 @@
     width: 100vw;
     font-size: 19px;
     margin-left: -45px;
-    font-weight: 550;
+    font-weight: 500;
     margin-top: 100px;
     color: var(--color_3);
     text-align: left;
@@ -230,7 +265,7 @@
     text-align: left;
     color: var(--color_3);
     font-size: 14px;
-    font-weight: 450;
+    font-weight: 400;
 }
 
 .b7 .icon {

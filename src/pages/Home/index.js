@@ -7,6 +7,7 @@ import InsertPageBreakIcon from '@mui/icons-material/InsertPageBreak';
 import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 import UploadFileIcon from '@mui/icons-material/UploadFile';
 import ListIcon from '@mui/icons-material/List';
+import DescriptionIcon from '@mui/icons-material/Description';
 
 const insert = () => {
     window.location = "entrada_de_nota"
@@ -39,8 +40,8 @@ function Home() {
             </header>
 
             <div className='infos'>
-                <h1 className='main-title'>NF Tools</h1>
-                <h2 className='subtitle'>Ferramenta para auxiliar na entrada de dados no sistema</h2>
+                <h1 className='main-title'>Ferramentas  online para auxiliar no sistema</h1>
+                <h2 className='subtitle'>Ferramenta para auxiliar na entrada de dados no sistema, entrada de notas, cadastro de itens, transferências de mercadorias e separação de pedidos de mercadoria.</h2>
             </div>
 
             <div className='tools-container'>
@@ -51,15 +52,19 @@ function Home() {
                 </button>
                 <button className='b2' onClick={cancel}>
                     <InsertPageBreakIcon className='icon'/>
-                    <h3 className='title'>Cancelar</h3>
+                    <h3 className='title'>Cancelamento da  nota</h3>
                     <p className='inf'>Remova todos os dados necessários, como CNPJ, data e itens.</p>
                 </button>
-                <button className='b3' onClick={registeritem}>
+                <button className='b3'>
+                    <DescriptionIcon className='icon'/>
+                    <h3 className='title'>Informações da nota</h3>
+                    <p className='inf'>Colete todos os dados necessários, como CNPJ, data e itens.</p>
+                </button>
+                <button className='b4' onClick={registeritem}>
                     <AppRegistrationIcon className='icon'/>
                     <h3 className='title'>Cadastro de item</h3>
                     <p className='inf'>Insira os dados essenciais para registrar um novo item.</p>
                 </button>
-                <button></button>
                 <button></button>
                 <button className='b6' onClick={transfer}>
                     <UploadFileIcon className='icon'/>
@@ -71,7 +76,6 @@ function Home() {
                     <h3 className='title'>Triagem</h3>
                     <p className='inf'>Solicitação para repor ou ajustar a quantidade de itens no estoque conforme a demanda.</p>
                 </button>
-                <button></button>
                 <button></button>
                 <button></button>
                 <button></button>
