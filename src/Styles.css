@@ -16,16 +16,17 @@
 }
 
 * {
-    right: 0px;
+    right: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', serif;  
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    outline: none;                                          
+    outline: none;  
+
 }
-  
-body {
+
+html, body {
     overflow-x: hidden;
 }

@@ -1,8 +1,6 @@
-
-
 .container { 
     height: auto;
-    width: auto;
+    width: 100vw;
     position: relative;
     margin: 0;
     padding: 0;
@@ -28,24 +26,27 @@
     color: var(--color_3);
     font-size: 21px;
     margin-top: 60px;
-    margin-left: 300px;
     padding-top: 30px;
+    flex-direction: column;
+    align-items: center; /* Alinha o conteúdo ao centro */
+    text-align: center; /* Centraliza o texto */
 }
 
 
 .main-title {
     top: 100px;
-    left: 550px;
     font-weight: 500;
+    text-align: center;
 }
 .subtitle {
+
     text-align: center;
     top: 80px;
     margin-top: 10px;
-    margin-left: -80px;
-    margin-right: 230px;
     font-size: 20px;
     font-weight: 400;
+    max-width: 80vw;
+    margin-left: 10%;
 }
 
 .nav {
@@ -69,14 +70,21 @@
 }
 
 .tools-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 40px;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: auto;
+    width: 100vw;
     margin-top: 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .tools-container button {
-    padding: 0;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+    padding-top: 25px;
     border: none;
     display: flex;
     background-color: var(--color_);
@@ -84,7 +92,7 @@
     margin-right: 5px;
     margin-bottom: 5px;
     height: 245px;
-    width: 265px;
+    width:100%px;
     box-shadow: -5px 9px 25px 7px rgba(0, 0, 0, 0.1);
     transition: font-size 0.3s ease;
 }
@@ -94,8 +102,6 @@
 }
 
 .b1 .icon {
-    margin-top: 30px;
-    margin-left: 15px;
     align-items: center;
     font-size: 50px;
     color: var(--color_5);
@@ -107,40 +113,33 @@
 }
 
 .b1 .title {
-    width: 100vw;
     font-size: 19px;
-    margin-left: -40px;
     font-weight: 500;
-    margin-top: 100px;
+    margin-top: 15px;
     color: var(--color_3);
     text-align: left;
     flex-wrap: nowrap;
 }
 
 .b1 .inf {
-    margin-top: 135px;
-    margin-left:-825px;
+    margin-top: 10px;
     margin-right: 25px;
-    text-align: left;
     color: var(--color_3);
     font-size: 14px;
     font-weight: 400;
 }
 
 .b2 .title {
-    width: 100vw;
     font-size: 19px;
-    margin-left: -45px;
     font-weight: 500;
-    margin-top: 100px;
+    margin-top: 15px;
     color: var(--color_3);
     text-align: left;
     flex-wrap: nowrap;
 }
 
 .b2 .inf {
-    margin-top: 135px;
-    margin-left:-820px;
+    margin-top: 10px;
     margin-right: 25px;
     text-align: left;
     color: var(--color_3);
@@ -149,8 +148,6 @@
 }
 
 .b2 .icon {
-    margin-top: 30px;
-    margin-left: 15px;
     align-items: center;
     font-size: 50px;
     color: var(--color_4);
@@ -158,19 +155,18 @@
 }
 
 .b3 .title {
-    width: 100vw;
     font-size: 19px;
-    margin-left: -45px;
     font-weight: 500;
-    margin-top: 100px;
+    margin-top: 15px;
     color: var(--color_3);
     text-align: left;
     flex-wrap: nowrap;
 }
 
+
 .b3 .inf {
-    margin-top: 135px;
-    margin-left:-830px;
+    margin-top: 10px;
+    margin-right: 25px;
     margin-right: 25px;
     text-align: left;
     color: var(--color_3);
@@ -179,8 +175,6 @@
 }
 
 .b3 .icon {
-    margin-top: 30px;
-    margin-left: 15px;
     align-items: center;
     font-size: 50px;
     color:var(--color_10);
@@ -188,19 +182,18 @@
 }
 
 .b4 .title {
-    width: 100vw;
     font-size: 19px;
-    margin-left: -45px;
     font-weight: 500;
-    margin-top: 100px;
+    margin-top: 15px;
     color: var(--color_3);
     text-align: left;
     flex-wrap: nowrap;
 }
 
+
 .b4 .inf {
-    margin-top: 135px;
-    margin-left:-915px;
+    margin-top: 10px;
+    margin-right: 25px;
     margin-right: 25px;
     text-align: left;
     color: var(--color_3);
@@ -209,8 +202,6 @@
 }
 
 .b4 .icon {
-    margin-top: 30px;
-    margin-left: 15px;
     align-items: center;
     font-size: 50px;
     color:var(--color_7);
@@ -218,19 +209,18 @@
 }
 
 .b6 .title {
-    width: 100vw;
     font-size: 19px;
-    margin-left: -45px;
     font-weight: 500;
-    margin-top: 100px;
+    margin-top: 15px;
     color: var(--color_3);
     text-align: left;
     flex-wrap: nowrap;
 }
 
+
 .b6 .inf {
-    margin-top: 135px;
-    margin-left:-700px;
+    margin-top: 10px;
+    margin-right: 25px;
     margin-right: 25px;
     text-align: left;
     color: var(--color_3);
@@ -239,8 +229,6 @@
 }
 
 .b6 .icon {
-    margin-top: 30px;
-    margin-left: 15px;
     align-items: center;
     font-size: 50px;
     color:var(--color_8);
@@ -248,19 +236,18 @@
 }
 
 .b7 .title {
-    width: 100vw;
     font-size: 19px;
-    margin-left: -45px;
     font-weight: 500;
-    margin-top: 100px;
+    margin-top: 15px;
     color: var(--color_3);
     text-align: left;
     flex-wrap: nowrap;
 }
 
+
 .b7 .inf {
-    margin-top: 135px;
-    margin-left:-570px;
+    margin-top: 10px;
+    margin-right: 25px;;
     margin-right: 25px;
     text-align: left;
     color: var(--color_3);
@@ -269,8 +256,6 @@
 }
 
 .b7 .icon {
-    margin-top: 30px;
-    margin-left: 15px;
     align-items: center;
     font-size: 50px;
     color:var(--color_9);
