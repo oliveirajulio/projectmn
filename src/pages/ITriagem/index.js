@@ -1,15 +1,13 @@
 import "./index.css"
 import React, { useRef } from "react";
 
+function Triagem () {
 
-function Info () {
-
-const fileInputRef = useRef(null);
+    const fileInputRef = useRef(null);
 
 const file = () => {
     fileInputRef.current.click();
 };
-
     return (
         <div className='ctn'>
             <header className='main-header'>
@@ -22,10 +20,10 @@ const file = () => {
             </header>
 
             <div className="work-container">
-                <h1 className="main">Informações da nota</h1>
-                <h2 className="inf2">Colete todos os dados necessários, como CNPJ, data e itens.  A precisão é crucial para evitar erros e garantir conformidade fiscal.</h2>
-                <button className="btninfo" onClick={file}>Selecionar NF</button>
-                <h3 className="uploadercaditem">ou arraste e solte seu arquivo aqui</h3>
+                <h1 className="main">Triagem</h1>
+                <h2 className="inf2">Solicitação para repor ou ajustar a quantidade de itens no estoque conforme a demanda.</h2>
+                <button className="btntriagem" onClick={file}>Selecionar NF</button>
+                <h3 className="uploader">ou arraste e solte seu arquivo aqui</h3>
 
                 <input
                     type="file"
@@ -34,12 +32,12 @@ const file = () => {
                     accept=".pdf, .xls, .xlsx" 
                 />
 
-                <button className="sdinfo"></button>
-                <button className="sd1info"></button>
+                <button className="sdtriagem"></button>
+                <button className="sd1triagem"></button>
             </div>
 
         </div>
     )
 }
 
-export default Info;
+export default Triagem;

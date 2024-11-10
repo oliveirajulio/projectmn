@@ -7,17 +7,16 @@
 
 .work-container {
     padding-top: 5px;
-    margin-top: 60px;
+    margin-top: 60px auto 0;
     margin-left: 300px;
     height: 900px;
     width: 700px;
 }
-
 .main { 
     text-align: center;
     margin-top: 30px;
     font-size: 42px;
-    font-weight: 500;
+    font-weight: 550;
     color: var(--color_3);
 
 }
@@ -30,7 +29,7 @@
     color: var(--color_3);
 }
 
-.btninfo {
+.btntriagem {
     cursor: pointer;
     font-size: 20px;
     color: #f9f9f9;
@@ -41,23 +40,23 @@
     width: 350px;
     border: none;
     border-radius: 10px;
-    background-color: var(--color_10);
+    background-color: var(--color_9);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     transition: filter 0.2s; 
 }
 
-.btninfo:hover {
-filter: brightness(0.8);
+.btntriagem:hover {
+    filter: brightness(0.8);
 }
 
-.uploadinfo {
+.uploader {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
     font-weight: 400;
 
 }
-.sdinfo {
+.sdtriagem {
     cursor: pointer;
     display: flex;
     margin-left: 542px;
@@ -67,16 +66,16 @@ filter: brightness(0.8);
     width: 33px;
     border: none;
     border-radius: 80px;
-    background-color: var(--color_10);
+    background-color: var(--color_9);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     transition: filter 0.2s; 
 }
 
-.sdinfo:hover {
+.sdtriagem:hover {
     filter: brightness(0.8);
 }
 
-.sd1info {
+.sd1triagem {
     cursor: pointer;
     display: flex;
     margin-left: 542px;
@@ -85,11 +84,11 @@ filter: brightness(0.8);
     width: 33px;
     border: none;
     border-radius: 80px;
-    background-color: var(--color_10);
+    background-color: var(--color_9);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     transition: filter 0.2s; 
 }
 
-.sd1info:hover {
+.sd1triagem:hover {
     filter: brightness(0.8);
 }
