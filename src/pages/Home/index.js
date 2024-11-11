@@ -10,6 +10,7 @@ import ListIcon from '@mui/icons-material/List';
 import DescriptionIcon from '@mui/icons-material/Description';
 import DifferenceIcon from '@mui/icons-material/Difference';
 import AssignmentIcon from '@mui/icons-material/Assignment';
+import FindInPageIcon from '@mui/icons-material/FindInPage';
 
 const insert = () => {
     window.location = "entrada_de_nota"
@@ -35,6 +36,10 @@ const triagem = () => {
     window.location = "triagem"
 }
 
+const consulta = () => {
+    window.location = "consulta"
+}
+
 
 
 function Home() {
@@ -43,8 +48,9 @@ function Home() {
             <header className='main-header'>
                 <nav className='nav'>
                     <ul>
-                        <li onClick={insert}>Inserir NF</li>
-                        <li>Remover NF</li>
+                        <li onClick={insert}>ENTRADA DE NF</li>
+                        <li>REMOVER NF</li>
+                        <li>CONSULTAR NF</li>
                     </ul>
                 </nav>
             </header>
@@ -65,13 +71,15 @@ function Home() {
                     <h3 className='title'>Cancelamento da  nota</h3>
                     <p className='inf'>Remova todos os dados necessários, como CNPJ, data e itens.</p>
                 </button>
-                <button className='b3' onClick={info}>
+                <button className='b3' onClick={consulta}>    
+                    <FindInPageIcon className='icon'/>
+                    <h3 className='title'>Consultar nota fiscal</h3>
+                    <p className='inf'>Consulte todos os dados necessários, como CNPJ, data e itens.</p>
+                </button>
+                <button className='b4' onClick={info}>
                     <DescriptionIcon className='icon'/>
                     <h3 className='title'>Informações da nota</h3>
                     <p className='inf'>Colete todos os dados necessários, como CNPJ, data e itens.</p>
-                </button>
-                <button>
-                    
                 </button>
                 <button className='b5' onClick={registeritem}>
                     <DifferenceIcon className='icon'/>

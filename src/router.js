@@ -5,6 +5,7 @@ import Cadastro_Item from "./pages/ICadItem"
 import Transferir_Item from "./pages/ITransfer"
 import Info from "./pages/IInfo"
 import Triagem from "./pages/ITriagem"
+import Consulta from "./pages/IConsulta"
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
@@ -19,7 +20,8 @@ function Router() {
                 <Route path="/transferencias" element={<Transferir_Item />} />
                 <Route path="/informacoes_da_nota" element={<Info />} />
                 <Route path="/triagem" element={<Triagem />} />
-            </Routes>
+                <Route path="/consulta" element={<Consulta />} />
+            </Routes>    
         </BrowserRouter>
 
     )

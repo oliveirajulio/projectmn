@@ -63,7 +63,7 @@
 
 .nav li {
     display: inline;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
     list-style-type: none;
     margin-right: 40px;
@@ -175,6 +175,33 @@
 }
 
 .b3 .icon {
+    align-items: center;
+    font-size: 50px;
+    color:var(--color_11);
+    transition: font-size 0.3s ease;
+}
+
+.b4 .title {
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 15px;
+    color: var(--color_3);
+    text-align: left;
+    flex-wrap: nowrap;
+}
+
+
+.b4 .inf {
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-right: 25px;
+    text-align: left;
+    color: var(--color_3);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.b4 .icon {
     align-items: center;
     font-size: 50px;
     color:var(--color_10);

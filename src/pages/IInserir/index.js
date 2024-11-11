@@ -21,8 +21,9 @@ function Inserir_Nota () {
             <header className='main-header'>
                 <nav className='nav'>
                     <ul>
-                        <li>Inserir NF</li>
-                        <li>Remover NF</li>
+                        <li>ENTRADA DE NF</li>
+                        <li>REMOVER NF</li>
+                        <li>CONSULTAR NF</li>
                     </ul>
                 </nav>
             </header>
@@ -42,8 +43,7 @@ function Inserir_Nota () {
 
                 <>
                     <div className="layout-file-selected">
-                        <h1>Arquivo Selecionado!</h1>
-                        <p>O conteúdo do arquivo agora pode ser processado.</p>
+                        <button className="btn-op">Finalizar</button>
                     </div>
                 </>
                 )}
