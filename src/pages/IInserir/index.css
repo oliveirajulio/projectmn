@@ -9,9 +9,12 @@
 
 .layout-initial {
     padding-top: 5px;
-    margin-top: 60px;
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    position: relative;
 }
 
 .layout-file-selected {
@@ -19,6 +22,19 @@
     margin-top: 60px;
     height: 100vh;
     width: 100vw;
+}
+
+.btn-group { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 0 auto;
+}
+
+.sd-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .main { 
@@ -52,10 +68,6 @@
     background-color: var(--color_1);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     transition: filter 0.2s;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
 }
 
 .btn:hover {
@@ -69,13 +81,8 @@
     font-weight: 400;
 
 }
-.sd {
+.sd, .sd1 {
     cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    margin-left: 845px; 
-    margin-top: -110px;
-    margin-bottom: 7px;
     height: 33px;
     width: 33px;
     border: none;
@@ -83,25 +90,14 @@
     background-color: var(--color_1);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     transition: filter 0.2s; 
+    margin-top: 0;
+    margin-bottom: 4px;
 }
 
 .sd:hover {
     filter: brightness(0.8);
 }
 
-.sd1 {
-    cursor: pointer;
-    display: flex;
-    margin-left: 845px;
-    margin-top: 5px;
-    height: 33px;
-    width: 33px;
-    border: none;
-    border-radius: 80px;
-    background-color: var(--color_1);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
-    transition: filter 0.2s; 
-}
 
 .sd1:hover {
     filter: brightness(0.8);
