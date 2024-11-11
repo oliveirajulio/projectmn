@@ -42,7 +42,7 @@
 
     text-align: center;
     top: 80px;
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 20px;
     font-weight: 400;
     max-width: 80vw;
@@ -88,7 +88,7 @@
     border: none;
     display: flex;
     background-color: var(--color_);
-    margin-top: 0px;
+    margin-top: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
     height: 245px;
