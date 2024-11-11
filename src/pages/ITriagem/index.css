@@ -1,26 +1,17 @@
 .ctn { 
     position: relative;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     background-color: var(--color_2);
-    height: auto;
-    width: 100vw;
 }
 
-.layout-initial {
+.work-container {
     padding-top: 5px;
-    margin-top: 60px;
-    height: 100vh;
-    width: 100vw;
+    margin-top: 60px auto 0;
+    margin-left: 300px;
+    height: 900px;
+    width: 700px;
 }
-
-.layout-file-selected {
-    padding-top: 5px;
-    margin-top: 60px;
-    height: 100vh;
-    width: 100vw;
-}
-
 .main { 
     text-align: center;
     margin-top: 30px;
@@ -36,29 +27,25 @@
     font-size: 20px;
     font-weight: 400;
     color: var(--color_3);
-    margin-bottom: 25px;
 }
 
-.btn {
+.btntriagem {
     cursor: pointer;
     font-size: 20px;
     color: #f9f9f9;
     font-weight: 500;
-    margin: 0 auto;
+    margin-left: 180px;
+    margin-top: 25px;
     height: 75px;
     width: 350px;
     border: none;
     border-radius: 10px;
-    background-color: var(--color_1);
+    background-color: var(--color_9);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
-    transition: filter 0.2s;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
+    transition: filter 0.2s; 
 }
 
-.btn:hover {
+.btntriagem:hover {
     filter: brightness(0.8);
 }
 
@@ -69,40 +56,39 @@
     font-weight: 400;
 
 }
-.sd {
+.sdtriagem {
     cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    margin-left: 845px; 
+    display: flex;
+    margin-left: 542px;
     margin-top: -110px;
     margin-bottom: 7px;
     height: 33px;
     width: 33px;
     border: none;
     border-radius: 80px;
-    background-color: var(--color_1);
+    background-color: var(--color_9);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     transition: filter 0.2s; 
 }
 
-.sd:hover {
+.sdtriagem:hover {
     filter: brightness(0.8);
 }
 
-.sd1 {
+.sd1triagem {
     cursor: pointer;
     display: flex;
-    margin-left: 845px;
+    margin-left: 542px;
     margin-top: 5px;
     height: 33px;
     width: 33px;
     border: none;
     border-radius: 80px;
-    background-color: var(--color_1);
+    background-color: var(--color_9);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     transition: filter 0.2s; 
 }
 
-.sd1:hover {
+.sd1triagem:hover {
     filter: brightness(0.8);
 }
