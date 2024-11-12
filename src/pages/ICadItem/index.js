@@ -1,45 +1,66 @@
 import "./index.css"
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
+function Inserir_Nota () {
 
-function Inserir_Item () {
+    const fileInputRef = useRef(null);
+    const [fileSelected, setfileSelected] = useState(false);
 
-const fileInputRef = useRef(null);
+    const fileselect = () => {
+        fileInputRef.current.click()
+    };
 
-const file = () => {
-    fileInputRef.current.click();
-};
+    const fileopen = (event) => {
+        if (event.target.files.length > 0) {
+            setfileSelected(true);
+        }
+    }
 
     return (
         <div className='ctn'>
             <header className='main-header'>
                 <nav className='nav'>
                     <ul>
-                        <li>Inserir NF</li>
-                        <li>Remover NF</li>
+                        <li>ENTRADA DE NF</li>
+                        <li>REMOVER NF</li>
+                        <li>CONSULTAR NF</li>
                     </ul>
                 </nav>
             </header>
 
-            <div className="work-container">
-                <h1 className="main">Cadastro de item</h1>
-                <h2 className="inf2">Insira todos os dados necessários, como CNPJ, data e itens.  A precisão é crucial para evitar erros e garantir conformidade fiscal.</h2>
-                <button className="btncaditem" onClick={file}>Selecionar NF</button>
-                <h3 className="uploadercaditem">ou arraste e solte seu arquivo aqui</h3>
+            {!fileSelected ? (
+                <>
+                    <div className="layout-initial">
+                        <h1 className="main">Cadastro de itens</h1>
+                        <h2 className="inf2">Insira todos os dados necessários, como CNPJ, data e itens.  A precisão é crucial para evitar erros e garantir conformidade fiscal.</h2>
+                        <div className="btn-group">
+                            <button className="btncaditem" onClick={fileselect}>Selecionar NF</button>
+                        <div className="sd-container">
+                            <button className="sdcaditem"></button>
+                            <button className="sd1caditem"></button>
+                        </div>
+                        </div>
+                        <h3 className="uploader">ou arraste e solte seu arquivo aqui</h3>
+                    </div>    
+                </>
+                ) : (
+
+                <>
+                    <div className="layout-file-selected">
+                        <button className="btn-op">Finalizar</button>
+                    </div>
+                </>
+                )}
 
                 <input
                     type="file"
                     ref={fileInputRef}
                     style={{ display: "none" }}
                     accept=".pdf, .xls, .xlsx" 
+                    onChange={fileopen}
                 />
-
-                <button className="sdcaditem"></button>
-                <button className="sd1caditem"></button>
-            </div>
-
         </div>
     )
 }
 
-export default Inserir_Item;
+export default Inserir_Nota;
