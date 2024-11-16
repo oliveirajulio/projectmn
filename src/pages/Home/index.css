@@ -289,5 +289,32 @@
     transition: font-size 0.3s ease;
 }
 
+.b8 .title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+    color: var(--color_3);
+    text-align: left;
+    flex-wrap: nowrap;
+}
+
+
+.b8 .inf {
+    margin-top: 10px;
+    margin-right: 25px;;
+    margin-right: 25px;
+    text-align: left;
+    color: var(--color_3);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.b8 .icon {
+    align-items: center;
+    font-size: 50px;
+    color:var(--color_12);
+    transition: font-size 0.3s ease;
+}
+
 
 

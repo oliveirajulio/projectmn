@@ -11,7 +11,7 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import DifferenceIcon from '@mui/icons-material/Difference';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import FindInPageIcon from '@mui/icons-material/FindInPage';
-
+import DriveFileMoveIcon from '@mui/icons-material/DriveFileMove';
 const insert = () => {
     window.location = "entrada_de_nota"
 }
@@ -38,6 +38,10 @@ const triagem = () => {
 
 const consulta = () => {
     window.location = "consulta"
+}
+
+const planilha = () => {
+    window.location ="planilha"
 }
 
 
@@ -96,7 +100,12 @@ function Home() {
                     <h3 className='title'>Triagem</h3>
                     <p className='inf'>Solicitação para repor ou ajustar a quantidade de itens no estoque conforme a demanda.</p>
                 </button>
-                <button></button>
+                <button className='b8' onClick={planilha}>
+                    <DriveFileMoveIcon className='icon'/>
+                    <h3 className='title'>Planilha</h3>
+                    <p className='inf'></p>
+
+                </button>
                 <button></button>
                 <button></button>
                 <button></button>

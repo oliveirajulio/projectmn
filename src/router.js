@@ -6,6 +6,7 @@ import Transferir_Item from "./pages/ITransfer"
 import Info from "./pages/IInfo"
 import Triagem from "./pages/ITriagem"
 import Consulta from "./pages/IConsulta"
+import Planilha from "./pages/IPlanilha"
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
@@ -21,6 +22,7 @@ function Router() {
                 <Route path="/informacoes_da_nota" element={<Info />} />
                 <Route path="/triagem" element={<Triagem />} />
                 <Route path="/consulta" element={<Consulta />} />
+                <Route path ="/planilha" element={<Planilha />} />
             </Routes>    
         </BrowserRouter>
 

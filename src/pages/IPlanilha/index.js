@@ -1,9 +1,9 @@
 import "./index.css"
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect} from "react";
 import uploadnf from "../../services/service-upload";
 import getnf from "../../services/service-getnf";
 
-function Inserir_Nota () {
+function Planilha () {
 
     const fileInputRef = useRef(null);
     const [fileSelected, setfileSelected] = useState(false);
@@ -14,7 +14,7 @@ function Inserir_Nota () {
     const fileselect = () => {
         fileInputRef.current.click()
     };
-    
+
     const fileopen = async (event) => {
         const selectedFile = event.target.files[0];
         if (selectedFile) {
@@ -57,13 +57,13 @@ function Inserir_Nota () {
             {!fileSelected ? (
                 <>
                     <div className="layout-initial">
-                        <h1 className="main">Cadastro de itens</h1>
-                        <h2 className="inf2">Insira todos os dados necessários, como CNPJ, data e itens.  A precisão é crucial para evitar erros e garantir conformidade fiscal.</h2>
+                        <h1 className="main">Planilha</h1>
+                        <h2 className="inf2"></h2>
                         <div className="btn-group">
-                            <button className="btncaditem" onClick={fileselect}>Selecionar NF</button>
+                            <button className="btnplanilha" onClick={fileselect}>Selecionar NF</button>
                         <div className="sd-container">
-                            <button className="sdcaditem"></button>
-                            <button className="sd1caditem"></button>
+                            <button className="sdplanilha"></button>
+                            <button className="sd1planilha"></button>
                         </div>
                         </div>
                         <h3 className="uploader">ou arraste e solte seu arquivo aqui</h3>
@@ -82,11 +82,11 @@ function Inserir_Nota () {
                     type="file"
                     ref={fileInputRef}
                     style={{ display: "none" }}
-                    accept=".pdf, .xls, .xlsx" 
+                    accept=".pdf, .xls, .xlsx, .csv" 
                     onChange={fileopen}
                 />
         </div>
     )
 }
 
-export default Inserir_Nota;
+export default Planilha;
