@@ -2,6 +2,8 @@ import "./index.css"
 import React, { useRef, useState, useEffect} from "react";
 import uploadnf from "../../services/service-upload";
 import getnf from "../../services/service-getnf";
+import converter from "../../services/service-convert";
+import ArrowCircleRightTwoToneIcon from '@mui/icons-material/ArrowCircleRightTwoTone';
 
 function Planilha () {
 
@@ -10,6 +12,7 @@ function Planilha () {
 
     const [File, setFile] = useState(null);
     const [notas, setNotas] = useState([])
+    const [convert, setConvert] = useState("")
 
     const fileselect = () => {
         fileInputRef.current.click()
@@ -42,6 +45,17 @@ function Planilha () {
         }
     };
 
+    const convertToExcel = async () => {
+        try {
+            const response = await converter();  // Chama a função convert, que é a responsável pela conversão
+            alert("Conversão realizada com sucesso!"); // Mensagem de sucesso após a conversão
+            setConvert("Conversão concluída! Clique em 'Baixar' para obter o Excel."); // Atualiza o estado
+        } catch (error) {
+            console.error("Erro na conversão:", error.message); // Erro no console
+            alert("Erro ao realizar a conversão."); // Mensagem de erro
+        }
+    };
+
     return (
         <div className='ctn'>
             <header className='main-header'>
@@ -57,8 +71,8 @@ function Planilha () {
             {!fileSelected ? (
                 <>
                     <div className="layout-initial">
-                        <h1 className="main">Planilha</h1>
-                        <h2 className="inf2"></h2>
+                        <h1 className="main">Planilha (Excel)</h1>
+                        <h2 className="inf2">Converte dados de notas fiscais em planilhas Excel, facilitando a entrada de informações no sistema.</h2>
                         <div className="btn-group">
                             <button className="btnplanilha" onClick={fileselect}>Selecionar NF</button>
                         <div className="sd-container">
@@ -73,7 +87,17 @@ function Planilha () {
 
                 <>
                     <div className="layout-file-selected">
-                        <button className="btn-op">Finalizar</button>
+                        <div className="box-tool">
+                            <div className="box-title">
+                                <h1>Planilha(Excel)</h1>
+                            </div>
+                            <div className="btn-box">
+                                <button onClick={convertToExcel}>Converter</button>
+                            </div>
+                        </div>
+                        <div className="box-main">
+
+                        </div>
                     </div>
                 </>
                 )}

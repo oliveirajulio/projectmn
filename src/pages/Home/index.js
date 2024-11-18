@@ -12,6 +12,8 @@ import DifferenceIcon from '@mui/icons-material/Difference';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import FindInPageIcon from '@mui/icons-material/FindInPage';
 import DriveFileMoveIcon from '@mui/icons-material/DriveFileMove';
+import DevicesFoldIcon from '@mui/icons-material/DevicesFold';
+
 const insert = () => {
     window.location = "entrada_de_nota"
 }
@@ -72,12 +74,12 @@ function Home() {
                 </button>
                 <button className='b2' onClick={cancel}>
                     <InsertPageBreakIcon className='icon'/>
-                    <h3 className='title'>Cancelamento da  nota</h3>
+                    <h3 className='title'>Cancelar nota</h3>
                     <p className='inf'>Remova todos os dados necessários, como CNPJ, data e itens.</p>
                 </button>
                 <button className='b3' onClick={consulta}>    
                     <FindInPageIcon className='icon'/>
-                    <h3 className='title'>Consultar nota fiscal</h3>
+                    <h3 className='title'>Consultar NF</h3>
                     <p className='inf'>Consulte todos os dados necessários, como CNPJ, data e itens.</p>
                 </button>
                 <button className='b4' onClick={info}>
@@ -87,8 +89,13 @@ function Home() {
                 </button>
                 <button className='b5' onClick={registeritem}>
                     <DifferenceIcon className='icon'/>
-                    <h3 className='title'>Cadastro de item</h3>
+                    <h3 className='title'>Cadastrar item</h3>
                     <p className='inf'>Insira os dados essenciais para registrar um novo item.</p>
+                </button>
+                <button className='b8' onClick={planilha}>
+                    <DevicesFoldIcon className='icon'/>
+                    <h3 className='title'>Planilha (Excel)</h3>
+                    <p className='inf'>Converte dados de notas fiscais em planilhas Excel, facilitando a entrada de informações no sistema.</p>
                 </button>
                 <button className='b6' onClick={transfer}>
                     <FileOpenIcon className='icon'/>
@@ -99,12 +106,6 @@ function Home() {
                     <AssignmentIcon className='icon'/>
                     <h3 className='title'>Triagem</h3>
                     <p className='inf'>Solicitação para repor ou ajustar a quantidade de itens no estoque conforme a demanda.</p>
-                </button>
-                <button className='b8' onClick={planilha}>
-                    <DriveFileMoveIcon className='icon'/>
-                    <h3 className='title'>Planilha</h3>
-                    <p className='inf'></p>
-
                 </button>
                 <button></button>
                 <button></button>

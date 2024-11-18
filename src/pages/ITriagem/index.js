@@ -73,7 +73,14 @@ function Inserir_Nota () {
 
                 <>
                     <div className="layout-file-selected">
-                        <button className="btn-op">Finalizar</button>
+                        <div className="boxtriagem-tool">
+                            <div className="boxtriagem-title">
+                                <h1>Triagem</h1>
+                            </div>
+                            <div className="btntriagem-box">
+                                <button>Coletar</button>
+                            </div>
+                        </div>
                     </div>
                 </>
                 )}

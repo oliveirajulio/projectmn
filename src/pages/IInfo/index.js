@@ -73,7 +73,14 @@ function Cancelar () {
 
                 <>
                     <div className="layout-file-selected">
-                        <button className="btn-op">Finalizar</button>
+                        <div className="boxinfo-tool">
+                            <div className="boxinfo-title">
+                                <h1>Informações da nota</h1>
+                            </div>
+                            <div className="btninfo-box">
+                                <button>Obter Informações</button>
+                            </div>
+                        </div>
                     </div>
                 </>
                 )}

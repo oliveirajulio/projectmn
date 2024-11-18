@@ -57,7 +57,7 @@ function Inserir_Nota () {
             {!fileSelected ? (
                 <>
                     <div className="layout-initial">
-                        <h1 className="main">Cadastro de itens</h1>
+                        <h1 className="main">Cadastrar item</h1>
                         <h2 className="inf2">Insira todos os dados necessários, como CNPJ, data e itens.  A precisão é crucial para evitar erros e garantir conformidade fiscal.</h2>
                         <div className="btn-group">
                             <button className="btncaditem" onClick={fileselect}>Selecionar NF</button>
@@ -73,7 +73,14 @@ function Inserir_Nota () {
 
                 <>
                     <div className="layout-file-selected">
-                        <button className="btn-op">Finalizar</button>
+                        <div className="boxcaditem-tool">
+                            <div className="boxcaditem-title">
+                                <h1>Cadastrar item</h1>
+                            </div>
+                            <div className="btncaditem-box">
+                                <button>Cadastrar</button>
+                            </div>
+                        </div>
                     </div>
                 </>
                 )}

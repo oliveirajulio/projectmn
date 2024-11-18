@@ -4,7 +4,7 @@ const BASE_URL = "http://127.0.0.1:5000"
 
 const service = axios.create({
     baseURL: BASE_URL, 
-    timeout: 10000,
+    timeout: 30000,
 })
 
 service.interceptors.request.use(

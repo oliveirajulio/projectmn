@@ -57,7 +57,7 @@ function Cancelar () {
             {!fileSelected ? (
                 <>
                     <div className="layout-initial">
-                        <h1 className="main">Cancelamento de nota</h1>
+                        <h1 className="main">Cancelar nota</h1>
                         <h2 className="inf2">Remova todos os dados necessários, como CNPJ, data e itens.  A precisão é crucial para evitar erros e garantir conformidade fiscal.</h2>
                         <div className="btn-group">
                             <button className="btncancel" onClick={fileselect}>Selecionar NF</button>
@@ -73,7 +73,14 @@ function Cancelar () {
 
                 <>
                     <div className="layout-file-selected">
-                        <button className="btn-op">Finalizar</button>
+                        <div className="boxcancelar-tool">
+                            <div className="boxcancelar-title">
+                                <h1>Cancelar nota</h1>
+                            </div>
+                            <div className="btncancelar-box">
+                                <button>Cancelar</button>
+                            </div>
+                        </div>
                     </div>
                 </>
                 )}
