@@ -13,6 +13,7 @@ import AssignmentIcon from '@mui/icons-material/Assignment';
 import FindInPageIcon from '@mui/icons-material/FindInPage';
 import DriveFileMoveIcon from '@mui/icons-material/DriveFileMove';
 import DevicesFoldIcon from '@mui/icons-material/DevicesFold';
+import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 
 const insert = () => {
     window.location = "entrada_de_nota"
@@ -107,7 +108,18 @@ function Home() {
                     <h3 className='title'>Triagem</h3>
                     <p className='inf'>Solicitação para repor ou ajustar a quantidade de itens no estoque conforme a demanda.</p>
                 </button>
-                <button></button>
+                <button className='b9'>
+                    <LocalGroceryStoreIcon className='icon'/>
+                    <h3 className='title'>Pedido de Compra</h3>
+                    <p className='inf'>Formaliza a solicitação de aquisição de produtos ou serviços, garantindo o controle e registro do processo de compra.
+
+
+
+
+
+
+</p>
+                </button>
                 <button></button>
                 <button></button>
                 <button></button>

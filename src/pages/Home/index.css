@@ -302,8 +302,7 @@
 
 .b8 .inf {
     margin-top: 10px;
-    margin-right: 25px;;
-    margin-right: 25px;
+    margin-right: 10px;
     text-align: left;
     color: var(--color_3);
     font-size: 14px;
@@ -317,5 +316,30 @@
     transition: font-size 0.3s ease;
 }
 
+.b9 .title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+    color: var(--color_3);
+    text-align: left;
+    flex-wrap: nowrap;
+}
+
+
+.b9 .inf {
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: left;
+    color: var(--color_3);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.b9 .icon {
+    align-items: center;
+    font-size: 50px;
+    color:var(--color_13);
+    transition: font-size 0.3s ease;
+}
 
 
