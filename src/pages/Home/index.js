@@ -13,6 +13,7 @@ import AssignmentIcon from '@mui/icons-material/Assignment';
 import FindInPageIcon from '@mui/icons-material/FindInPage';
 import DriveFileMoveIcon from '@mui/icons-material/DriveFileMove';
 import DevicesFoldIcon from '@mui/icons-material/DevicesFold';
+import StorefrontIcon from '@mui/icons-material/Storefront';
 
 const insert = () => {
     window.location = "entrada_de_nota"
@@ -107,7 +108,7 @@ function Home() {
                     <h3 className='title'>Triagem</h3>
                     <p className='inf'>Solicitação para repor ou ajustar a quantidade de itens no estoque conforme a demanda.</p>
                 </button>
-                <button></button>
+                <button></button> 
                 <button></button>
                 <button></button>
                 <button></button>
