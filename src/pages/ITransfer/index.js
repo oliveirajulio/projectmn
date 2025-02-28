@@ -93,6 +93,17 @@ function Inserir_Nota () {
 
                 <>
                     <div className="layout-file-selected">
+                        <div className="ctn-interprises">
+                            <button className="main-transfer"></button>
+                            <button className="l1"></button>
+                            <button className="l2"></button>
+                            <button className="l3"></button>
+                            <button className="l4"></button>
+                            <button className="l5"></button>
+                            <button className="l6"></button>
+                            <button className="l7"></button>
+                            <button className="l8"></button>
+                        </div>
                         <div className="boxtransfer-tool">
                             <div className="boxtransfer-title">
                                 <h1>Transferência</h1>
