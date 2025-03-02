@@ -6,11 +6,10 @@ function uploadnf (file) {
         formData.append("file", file);
 
         service.post("/upload", formData, {
-            headers: {"Content-Type" : "multipart/form-data",},
+            headers: { "Content-Type": "multipart/form-data" },
         })
-        .then(response => resolve(response.data))
+        .then(response => resolve(response.data))  // Retorna { message, id_nota }
         .catch(error => reject(error));
-    })
+    });
 }
-
 export default uploadnf;

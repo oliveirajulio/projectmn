@@ -15,6 +15,7 @@ import DriveFileMoveIcon from '@mui/icons-material/DriveFileMove';
 import DevicesFoldIcon from '@mui/icons-material/DevicesFold';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 
+
 const insert = () => {
     window.location = "entrada_de_nota"
 }
@@ -111,15 +112,9 @@ function Home() {
                 <button className='b9'>
                     <LocalGroceryStoreIcon className='icon'/>
                     <h3 className='title'>Pedido de Compra</h3>
-                    <p className='inf'>Formaliza a solicitação de aquisição de produtos ou serviços, garantindo o controle e registro do processo de compra.
-
-
-
-
-
-
-</p>
+                    <p className='inf'>Formaliza a solicitação de aquisição de produtos ou serviços, garantindo o controle e registro do processo de compra.</p>
                 </button>
+                <button></button> 
                 <button></button>
                 <button></button>
                 <button></button>
