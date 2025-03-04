@@ -1,9 +1,12 @@
-import service from "./service"
+import service from "./service";
 
-function uploadnf (file) {
+function uploadnf(file, selectedButtons = {}) {
     return new Promise((resolve, reject) => {
         const formData = new FormData();
         formData.append("file", file);
+        
+        // Add selected buttons information to the form data
+        formData.append("selectedButtons", JSON.stringify(selectedButtons));
 
         service.post("/upload", formData, {
             headers: { "Content-Type": "multipart/form-data" },
@@ -12,4 +15,5 @@ function uploadnf (file) {
         .catch(error => reject(error));
     });
 }
+
 export default uploadnf;

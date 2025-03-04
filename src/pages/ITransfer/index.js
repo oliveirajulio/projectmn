@@ -12,7 +12,26 @@ function Inserir_Nota () {
     const [File, setFile] = useState(null);
     const [notas, setNotas] = useState([])
     const [idNota, setIdNota] = useState(null); // Estado para armazenar o ID da nota
+    const [selectedButtons, setSelectedButtons] = useState({
+        mainTransfer: false,
+        l1: false,
+        l2: false,
+        l3: false,
+        l4: false,
+        l5: false,
+        l6: false,
+        l7: false,
+        l8: false
+      });
+      const [isProcessing, setIsProcessing] = useState(false);
 
+
+    const buttonselect = (buttonName) => {
+    setSelectedButtons(prev => ({
+        ...prev,
+        [buttonName]: !prev[buttonName]
+    }));
+    };
 
     const fileselect = () => {
         fileInputRef.current.click()
@@ -49,18 +68,31 @@ function Inserir_Nota () {
 
     const Transferir = async () => {
         if (!idNota) {
-            alert("Nenhuma nota foi carregada para processar.");
-            return;
+          alert("Nenhuma nota foi carregada para processar.");
+          return;
         }
-    
+      
+        // Verificar se pelo menos uma loja foi selecionada
+        const algumaSelecionada = Object.values(selectedButtons).some(value => value === true);
+        if (!algumaSelecionada) {
+          alert("Selecione pelo menos uma loja para transferência.");
+          return;
+        }
+      
         try {
-            const response = await processarNota(idNota);
-            alert(response.message);
+          // Mostrar indicador de carregamento
+          setIsProcessing(true);
+          const response = await processarNota(idNota, selectedButtons);
+          alert(response.message);
         } catch (error) {
-            console.error("Erro ao processar a nota fiscal:", error.message);
-            alert("Erro ao processar a nota fiscal.");
+          console.error("Erro ao processar a nota fiscal:", error.message);
+          alert("Erro ao processar a nota fiscal: " + error.message);
+        } finally {
+          // Esconder indicador de carregamento
+          setIsProcessing(false);
         }
-    };
+      };
+      
 
     return (
         <div className='ctn'>
@@ -94,25 +126,76 @@ function Inserir_Nota () {
                 <>
                     <div className="layout-file-selected">
                         <div className="ctn-interprises">
-                            <button className="main-transfer"></button>
-                            <button className="l1"></button>
-                            <button className="l2"></button>
-                            <button className="l3"></button>
-                            <button className="l4"></button>
-                            <button className="l5"></button>
-                            <button className="l6"></button>
-                            <button className="l7"></button>
-                            <button className="l8"></button>
+                            <button 
+                                className={`main-transfer ${selectedButtons['mainTransfer'] ? 'selected' : ''}`} 
+                                onClick={() => buttonselect('mainTransfer')}
+                            >
+                                Principal
+                            </button>
+                            <button 
+                                className={`l1 ${selectedButtons.l1 ? 'selected' : ''}`} 
+                                onClick={() => buttonselect('l1')}
+                            >
+                                L1
+                            </button>
+                            <button 
+                                className={`l2 ${selectedButtons.l2 ? 'selected' : ''}`} 
+                                onClick={() => buttonselect('l2')}
+                            >
+                                L2
+                            </button>
+                            <button 
+                                className={`l3 ${selectedButtons.l3 ? 'selected' : ''}`} 
+                                onClick={() => buttonselect('l3')}
+                            >
+                                L3
+                            </button>
+                            <button 
+                                className={`l4 ${selectedButtons.l4 ? 'selected' : ''}`} 
+                                onClick={() => buttonselect('l4')}
+                            >
+                                L4
+                            </button>
+                            <button 
+                                className={`l5 ${selectedButtons.l5 ? 'selected' : ''}`} 
+                                onClick={() => buttonselect('l5')}
+                            >
+                                L5
+                            </button>
+                            <button 
+                                className={`l6 ${selectedButtons.l6 ? 'selected' : ''}`} 
+                                onClick={() => buttonselect('l6')}
+                            >
+                                L6
+                            </button>
+                            <button 
+                                className={`l7 ${selectedButtons.l7 ? 'selected' : ''}`} 
+                                onClick={() => buttonselect('l7')}
+                            >
+                                L7
+                            </button>
+                            <button 
+                                className={`l8 ${selectedButtons.l8 ? 'selected' : ''}`} 
+                                onClick={() => buttonselect('l8')}
+                            >
+                                L8
+                            </button>
                         </div>
                         <div className="boxtransfer-tool">
                             <div className="boxtransfer-title">
                                 <h1>Transferência</h1>
                             </div>
                             <div className="btntransfer-box">
-                                <button onClick={Transferir}>Transferir</button>
+                                <button 
+                                    onClick={Transferir} 
+                                    disabled={isProcessing}
+                                >
+                                    {isProcessing ? 'Processando...' : 'Transferir'}
+                                </button>
+                                {isProcessing && <div className="loading-spinner"></div>}
+                                </div>
                             </div>
                         </div>
-                    </div>
                 </>
                 )}
 
