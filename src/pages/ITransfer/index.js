@@ -21,7 +21,9 @@ function Inserir_Nota () {
         l5: false,
         l6: false,
         l7: false,
-        l8: false
+        l8: false,
+        l9: false,
+        l10: false
       });
       const [isProcessing, setIsProcessing] = useState(false);
 
@@ -130,25 +132,25 @@ function Inserir_Nota () {
                                 className={`main-transfer ${selectedButtons['mainTransfer'] ? 'selected' : ''}`} 
                                 onClick={() => buttonselect('mainTransfer')}
                             >
-                                Principal
+                                CD Matriz
                             </button>
                             <button 
                                 className={`l1 ${selectedButtons.l1 ? 'selected' : ''}`} 
                                 onClick={() => buttonselect('l1')}
                             >
-                                L1
+                                G. Portela 
                             </button>
                             <button 
                                 className={`l2 ${selectedButtons.l2 ? 'selected' : ''}`} 
                                 onClick={() => buttonselect('l2')}
                             >
-                                L2
+                                P. Frontim
                             </button>
                             <button 
                                 className={`l3 ${selectedButtons.l3 ? 'selected' : ''}`} 
                                 onClick={() => buttonselect('l3')}
                             >
-                                L3
+                                A. Garcia
                             </button>
                             <button 
                                 className={`l4 ${selectedButtons.l4 ? 'selected' : ''}`} 
@@ -172,13 +174,25 @@ function Inserir_Nota () {
                                 className={`l7 ${selectedButtons.l7 ? 'selected' : ''}`} 
                                 onClick={() => buttonselect('l7')}
                             >
-                                L7
+                                Vassouras
                             </button>
                             <button 
                                 className={`l8 ${selectedButtons.l8 ? 'selected' : ''}`} 
                                 onClick={() => buttonselect('l8')}
                             >
-                                L8
+                                Volta Redonda
+                            </button>
+                            <button 
+                                className={`l9 ${selectedButtons.l9 ? 'selected' : ''}`} 
+                                onClick={() => buttonselect('l9')}
+                            >
+                                Mendes
+                            </button>
+                            <button 
+                                className={`l10 ${selectedButtons.l10 ? 'selected' : ''}`} 
+                                onClick={() => buttonselect('l10')}
+                            >
+                                VR Vila
                             </button>
                         </div>
                         <div className="boxtransfer-tool">
