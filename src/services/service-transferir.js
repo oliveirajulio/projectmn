@@ -17,6 +17,8 @@ export const processarNota = async (idNota, selectedButtons) => {
             l6: selectedButtons.l6,
             l7: selectedButtons.l7,
             l8: selectedButtons.l8,
+            l9: selectedButtons.l9,
+            l10: selectedButtons.l10
           }
         }),
       });

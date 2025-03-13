@@ -4,6 +4,8 @@ import uploadnf from "../../services/service-upload";
 import { processarNota } from "../../services/service-transferir";
 import getnf from "../../services/service-getnf";
 
+import HomeWorkTwoToneIcon from '@mui/icons-material/HomeWorkTwoTone';
+
 function Inserir_Nota () {
 
     const fileInputRef = useRef(null);
@@ -131,68 +133,77 @@ function Inserir_Nota () {
                             <button 
                                 className={`main-transfer ${selectedButtons['mainTransfer'] ? 'selected' : ''}`} 
                                 onClick={() => buttonselect('mainTransfer')}
-                            >
-                                CD Matriz
+                            >   
+                                <span><HomeWorkTwoToneIcon className="ic-interprise"/></span>
+                                <span className="inter-name">CD. Matriz</span>
                             </button>
+                            <span className="vertical-line"><p>Para onde vai a transferência?</p></span>
                             <button 
                                 className={`l1 ${selectedButtons.l1 ? 'selected' : ''}`} 
                                 onClick={() => buttonselect('l1')}
                             >
-                                G. Portela 
+                                <span><HomeWorkTwoToneIcon className="ic-interprise"/></span>
+                                <span className="inter-name">G. Portela - Loja 07</span> 
                             </button>
                             <button 
                                 className={`l2 ${selectedButtons.l2 ? 'selected' : ''}`} 
                                 onClick={() => buttonselect('l2')}
                             >
-                                P. Frontim
+                                <span><HomeWorkTwoToneIcon className="ic-interprise"/></span>
+                                <span className="inter-name">P. Frontim - Loja 04</span>
                             </button>
                             <button 
                                 className={`l3 ${selectedButtons.l3 ? 'selected' : ''}`} 
                                 onClick={() => buttonselect('l3')}
                             >
-                                A. Garcia
+                                <span><HomeWorkTwoToneIcon className="ic-interprise"/></span>
+                                <span className="inter-name">A. Garcia - Loja 10</span>
                             </button>
-                            <button 
-                                className={`l4 ${selectedButtons.l4 ? 'selected' : ''}`} 
-                                onClick={() => buttonselect('l4')}
-                            >
-                                L4
-                            </button>
-                            <button 
-                                className={`l5 ${selectedButtons.l5 ? 'selected' : ''}`} 
-                                onClick={() => buttonselect('l5')}
-                            >
-                                L5
-                            </button>
-                            <button 
-                                className={`l6 ${selectedButtons.l6 ? 'selected' : ''}`} 
-                                onClick={() => buttonselect('l6')}
-                            >
-                                L6
-                            </button>
+                                {/* <button 
+                                    className={`l4 ${selectedButtons.l4 ? 'selected' : ''}`} 
+                                    onClick={() => buttonselect('l4')}
+                                >
+                                    L4
+                                </button>
+                                <button 
+                                    className={`l5 ${selectedButtons.l5 ? 'selected' : ''}`} 
+                                    onClick={() => buttonselect('l5')}
+                                >
+                                    L5
+                                </button>
+                                <button 
+                                    className={`l6 ${selectedButtons.l6 ? 'selected' : ''}`} 
+                                    onClick={() => buttonselect('l6')}
+                                >
+                                    L6
+                                </button> */}
                             <button 
                                 className={`l7 ${selectedButtons.l7 ? 'selected' : ''}`} 
                                 onClick={() => buttonselect('l7')}
                             >
-                                Vassouras
+                                <span><HomeWorkTwoToneIcon className="ic-interprise"/></span>
+                                <span className="inter-name">Vassouras - Loja 05</span>
                             </button>
                             <button 
                                 className={`l8 ${selectedButtons.l8 ? 'selected' : ''}`} 
                                 onClick={() => buttonselect('l8')}
                             >
-                                Volta Redonda
+                                <span><HomeWorkTwoToneIcon className="ic-interprise"/></span>
+                                <span className="inter-name">V. Redonda - Loja 06</span>
                             </button>
                             <button 
                                 className={`l9 ${selectedButtons.l9 ? 'selected' : ''}`} 
                                 onClick={() => buttonselect('l9')}
                             >
-                                Mendes
+                                <span><HomeWorkTwoToneIcon className="ic-interprise"/></span>
+                                <span className="inter-name">Mendes - Loja 09</span>
                             </button>
                             <button 
                                 className={`l10 ${selectedButtons.l10 ? 'selected' : ''}`} 
                                 onClick={() => buttonselect('l10')}
                             >
-                                VR Vila
+                                <span><HomeWorkTwoToneIcon className="ic-interprise"/></span>
+                                <span className="inter-name">VR Vila - Loja 11</span>
                             </button>
                         </div>
                         <div className="boxtransfer-tool">
